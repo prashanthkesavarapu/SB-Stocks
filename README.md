@@ -42,6 +42,12 @@ SB Stocks is a full-stack paper-trading platform where users can explore US stoc
 
 The Express API runs at `http://localhost:5000`. A user who registers with the email configured in `ADMIN_EMAIL` receives the admin role.
 
+To use a separately hosted API, create `client/.env` with:
+
+```env
+VITE_API_URL=https://your-api-domain.example/api
+```
+
 ## Important deployment note
 
 The provided `.env` file is ignored by Git and must never be committed. For production, use MongoDB Atlas, set environment variables on the hosting platform, and replace the development JWT secret.
