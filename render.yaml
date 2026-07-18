@@ -2,6 +2,7 @@ services:
   - type: web
     name: sb-stocks
     runtime: node
+    plan: free
     buildCommand: npm run build
     startCommand: npm start
     healthCheckPath: /api/health
